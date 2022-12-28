@@ -10,7 +10,7 @@ import { Provider } from "react-redux";
 // redux persist is used to save session details as an alternative of local storage
 import {
   persistStore,
-  presistReducer,
+  persistReducer,
   FLUSH,
   REHYDRATE,
   PAUSE,
@@ -20,10 +20,9 @@ import {
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import { PersistGate } from "redux-persist/integration/react";
-import persistStore from "redux-persist/es/persistStore";
 
 const persistConfig = { key: "root", storage, version: 1 };
-const persistedReducer = presistReducer(persistConfig, authReducer);
+const persistedReducer = persistReducer(persistConfig, authReducer);
 
 // reffer redux toolkit - documentation for this template
 
