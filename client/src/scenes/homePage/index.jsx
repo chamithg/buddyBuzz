@@ -1,4 +1,11 @@
+import Navbar from "scenes/navbar";
+import { Box } from "@mui/material";
+
 const HomePage = () => {
-  return <div>Homepage</div>;
+  return (
+    <Box>
+      <Navbar />
+    </Box>
+  );
 };
 export default HomePage;
